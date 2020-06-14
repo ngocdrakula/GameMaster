@@ -16,6 +16,7 @@ import Home from './components/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './gamemaster.css';
 import './App.css';
+
 export default class App extends React.Component {
   render() {
     return (
