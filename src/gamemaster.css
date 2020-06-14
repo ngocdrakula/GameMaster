@@ -1,0 +1,61 @@
+body{
+  margin-top: 50px;
+}
+.h-transition{
+  display: block!important;
+  max-height: 0;
+  transition: max-height .5s ease 0s;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+.h-transition.show, .h-transition.active{
+  transition: max-height 1s ease 0s;
+  max-height: 300px;
+}
+@media(min-width: 768px){
+  .h-transition{
+    max-height: unset;
+    overflow: visible;
+  }
+}
+button.navbar-toggler{
+  outline: none;
+}
+button.navbar-toggler .navbar-toggler-icon{
+  outline: none;
+  transform: rotate(0deg);
+  transition: transform .5s;
+}
+button.navbar-toggler.collapsed .navbar-toggler-icon{
+  transform: rotate(90deg);
+  transition: transform .5s;
+}
+.nav-item.dropdown .dropdown-toggle::after {
+  vertical-align: .1em;
+}
+.nav-item.dropdown.show .dropdown-toggle::after {
+  border-top: 0;
+  border-bottom: .3em solid;
+}
+
+/* Chrome, Safari and Opera syntax */
+body:-webkit-full-screen {
+  background-color: yellow;
+}
+
+/* Firefox syntax */
+body:-moz-full-screen {
+  background-color: yellow;
+}
+
+/* IE/Edge syntax */
+body:-ms-fullscreen {
+  background-color: yellow;
+}
+
+/* Standard syntax */
+body:fullscreen {
+  background-color: yellow;
+}
